@@ -44,10 +44,10 @@ declare module "aws-sdk" {
 		apiVersions: Array<string>;
 
 		defineService(serviceIdentifier: string, versions: Array<string>, features: any): Service;
-		makeRequest(operation: string, params: any, callback: (err: any, data: any) => void);
-		makeUnauthenticatedRequest(operation: string, params: any, callback: (err: any, data: any) => void);
+		makeRequest(operation: string, params: any, callback: (err: any, data: any) => void): void;
+		makeUnauthenticatedRequest(operation: string, params: any, callback: (err: any, data: any) => void): void;
 		setupRequestListeners(): void;
-		waitFor(state: string, params: any, callback: (err: any, data: any) => void);
+		waitFor(state: string, params: any, callback: (err: any, data: any) => void): void;
 	}
 
 	export interface Services {
