@@ -189,7 +189,7 @@ declare module "aws-sdk" {
 		constructor(options?: any);
 		describeStream(params: any, callback: (err: any, data: any) => void): any;
 		getRecords(params: any, callback: (err: any, data: any) => void): any;
-		getShartIterator(params: any, callback: (err: any, data: any) => void): any;
+		getShardIterator(params: any, callback: (err: any, data: any) => void): any;
 		listStreams(params: any, callback: (err: any, data: any) => void): any;
 	}
 
